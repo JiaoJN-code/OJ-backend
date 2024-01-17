@@ -1,8 +1,7 @@
 package com.jjn.ojManagement.judge;
 
-import com.jjn.ojManagement.judge.codeSandBox.model.ExecuteCodeResponse;
 import com.jjn.ojManagement.model.entity.QuestionSubmit;
-import com.jjn.ojManagement.model.vo.QuestionVo;
+import com.jjn.ojManagement.model.vo.JudgeInfo;
 
 /**
  * 判题服务
@@ -11,5 +10,5 @@ import com.jjn.ojManagement.model.vo.QuestionVo;
  * @date 2024/1/16
  */
 public interface JudgeService {
-    ExecuteCodeResponse doJudge(QuestionSubmit questionSubmit);
+    JudgeInfo doJudge(QuestionSubmit questionSubmit);
 }

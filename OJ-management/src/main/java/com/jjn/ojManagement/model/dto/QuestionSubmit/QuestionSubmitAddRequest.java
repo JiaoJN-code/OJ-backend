@@ -1,11 +1,8 @@
 package com.jjn.ojManagement.model.dto.QuestionSubmit;
 
-import com.baomidou.mybatisplus.annotation.IdType;
-import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 import java.io.Serializable;
-import java.util.Date;
 
 /**
  * 提交代码请求

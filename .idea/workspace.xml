@@ -4,7 +4,21 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6615810-eb07-4989-8e0e-bca665854fab" name="变更" comment="" />
+    <list default="true" id="a6615810-eb07-4989-8e0e-bca665854fab" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/JudgeManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/strategy/DefaultJudgeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/strategy/JavaJudgeStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/strategy/JudgeContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/strategy/JudgeStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/controller/QuestionSubmitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/controller/QuestionSubmitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/JudgeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/JudgeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/JudgeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/JudgeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/codeSandBox/CodeSandboxProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/codeSandBox/CodeSandboxProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,8 +27,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -22,11 +36,15 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
-        <option name="accountId" value="4cce8f29-cdcd-4fc8-a0b3-d475950b5bd1" />
-        <option name="url" value="git@github.com:JiaoJN-code/jjnOJ-backend.git" />
+        <option name="accountId" value="47c49cbb-d149-4c16-93a0-ccf40d5cb8ee" />
+        <option name="url" value="https://github.com/JiaoJN-code/OJ-backend.git" />
       </UrlAndAccount>
     </option>
   </component>
@@ -46,33 +64,34 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-1.8&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;70de1d358a5f1d4e5a4cecff85cdecd4&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-1.8",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "spring.configuration.checksum": "70de1d358a5f1d4e5a4cecff85cdecd4",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jjn.ojManagement.judge.strategy" />
       <recent name="com.jjn.ojManagement.judge.codeSandBox.impl" />
       <recent name="com.jjn.ojManagement.model.dto" />
       <recent name="com.jjn.ojManagement.model.vo" />
@@ -106,7 +125,7 @@
       <workItem from="1705037726913" duration="9057000" />
       <workItem from="1705288529514" duration="7498000" />
       <workItem from="1705384602530" duration="13282000" />
-      <workItem from="1705473582532" duration="708000" />
+      <workItem from="1705473582532" duration="8872000" />
     </task>
     <servers />
   </component>
@@ -123,5 +142,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/OJ-management" />
+    </ignored-roots>
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/JudgeServiceImpl.java</url>
+          <line>76</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

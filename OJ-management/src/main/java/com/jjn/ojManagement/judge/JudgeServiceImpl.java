@@ -1,6 +1,6 @@
 package com.jjn.ojManagement.judge;
 
-import com.google.common.reflect.TypeToken;
+import com.alibaba.fastjson.JSON;
 import com.google.gson.Gson;
 import com.jjn.ojManagement.common.ErrorCode;
 import com.jjn.ojManagement.exception.BusinessException;
@@ -9,13 +9,14 @@ import com.jjn.ojManagement.judge.codeSandBox.CodeSandboxFactory;
 import com.jjn.ojManagement.judge.codeSandBox.CodeSandboxProxy;
 import com.jjn.ojManagement.judge.codeSandBox.model.ExecuteCodeRequest;
 import com.jjn.ojManagement.judge.codeSandBox.model.ExecuteCodeResponse;
+import com.jjn.ojManagement.judge.strategy.JudgeContext;
+import com.jjn.ojManagement.judge.strategy.JudgeStrategy;
 import com.jjn.ojManagement.model.dto.Question.JudgeCase;
 import com.jjn.ojManagement.model.entity.Question;
 import com.jjn.ojManagement.model.entity.QuestionSubmit;
 import com.jjn.ojManagement.model.enums.QuestionSubmitStatusEnum;
-import com.jjn.ojManagement.model.vo.QuestionVo;
+import com.jjn.ojManagement.model.vo.JudgeInfo;
 import com.jjn.ojManagement.service.QuestionService;
-import nonapi.io.github.classgraph.json.JSONUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
@@ -31,17 +32,19 @@ import java.util.stream.Collectors;
  * @date 2024/1/16
  */
 @Service
-public class JudgeServiceImpl implements JudgeService{
+public class JudgeServiceImpl implements JudgeService {
 
+    private final static Gson GSON = new Gson();
     @Value("${codeSandbox.type}")
     private String type;
     @Resource
     private QuestionService questionService;
 
-    private final static Gson GSON = new Gson();
+    @Resource
+    private JudgeManager judgeManager;
 
     @Override
-    public ExecuteCodeResponse doJudge(QuestionSubmit questionSubmit) {
+    public JudgeInfo doJudge(QuestionSubmit questionSubmit) {
         // 1. 获取题目信息
         Question question = questionService.getById(questionSubmit.getQuestionId());
         if (question == null) {
@@ -62,8 +65,7 @@ public class JudgeServiceImpl implements JudgeService{
         codeSandbox = new CodeSandboxProxy(codeSandbox);
         String language = questionSubmit.getLanguage();
         String code = questionSubmit.getCode();
-        List<JudgeCase> judgeCaseList = GSON.fromJson(question.getJudgeCase(), new TypeToken<List<JudgeCase>>() {
-        }.getType());
+        List<JudgeCase> judgeCaseList = JSON.parseArray(question.getJudgeCase(), JudgeCase.class);
         List<String> inputList = judgeCaseList.stream().map(JudgeCase::getInput).collect(Collectors.toList());
         ExecuteCodeRequest executeCodeRequest = ExecuteCodeRequest.builder()
                 .code(code)
@@ -71,7 +73,16 @@ public class JudgeServiceImpl implements JudgeService{
                 .inputList(inputList)
                 .build();
         ExecuteCodeResponse executeCodeResponse = codeSandbox.executeCode(executeCodeRequest);
+        // 5.进行判题
+        JudgeContext judgeContext = new JudgeContext();
+        judgeContext.setJudgeInfo(executeCodeResponse.getJudgeInfo());
+        judgeContext.setOutputList(executeCodeResponse.getOutputList());
+        judgeContext.setJudgeCaseList(judgeCaseList);
+        judgeContext.setQuestion(question);
+        // 根据编程语言选择判题策略
+        JudgeStrategy judgeStrategy = judgeManager.doJudge(questionSubmit.getLanguage());
+        JudgeInfo judgeInfo = judgeStrategy.doJudge(judgeContext);
         // 返回执行信息
-        return executeCodeResponse;
+        return judgeInfo;
     }
 }

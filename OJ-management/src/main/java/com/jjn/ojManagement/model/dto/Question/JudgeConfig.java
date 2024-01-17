@@ -4,6 +4,7 @@ import lombok.Data;
 
 /**
  * 判题配置
+ *
  * @author 焦久宁
  * @date 2024/1/6
  */

@@ -17,7 +17,6 @@ import org.springframework.web.context.request.ServletRequestAttributes;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
-import java.util.Objects;
 
 /**
  * 权限校验AOP
@@ -40,7 +39,7 @@ public class AuthInterceptor {
      */
     @Around("@annotation(authCheck)")
     public Object doInterceptor(ProceedingJoinPoint joinPoint, AuthCheck authCheck) throws Throwable {
-        String mustRole =  authCheck.mustRole();
+        String mustRole = authCheck.mustRole();
         // 得到request对象
         RequestAttributes requestAttributes = RequestContextHolder.currentRequestAttributes();
         HttpServletRequest request = ((ServletRequestAttributes) requestAttributes).getRequest();
@@ -49,7 +48,7 @@ public class AuthInterceptor {
         // 必须有权限才能通过
         if (StringUtils.isNotBlank(mustRole)) {
             UserRoleEnum mustUserRoleEnum = UserRoleEnum.getEnumByValue(mustRole);
-            if (mustUserRoleEnum == null ) {
+            if (mustUserRoleEnum == null) {
                 throw new BusinessException(ErrorCode.NO_AUTH_ERROR);
             }
             String userRole = loginUser.getUserRole();

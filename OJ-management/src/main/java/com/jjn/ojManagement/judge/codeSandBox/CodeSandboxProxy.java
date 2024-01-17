@@ -11,7 +11,7 @@ import lombok.extern.slf4j.Slf4j;
  * @date 2024/1/16
  */
 @Slf4j
-public class CodeSandboxProxy implements CodeSandbox{
+public class CodeSandboxProxy implements CodeSandbox {
 
     private final CodeSandbox codeSandbox;
 
@@ -25,6 +25,6 @@ public class CodeSandboxProxy implements CodeSandbox{
         log.info("代码沙箱输入：" + executeCodeRequest.toString());
         ExecuteCodeResponse executeCodeResponse = codeSandbox.executeCode(executeCodeRequest);
         log.info("代码沙箱输出：" + executeCodeResponse.toString());
-        return null;
+        return executeCodeResponse;
     }
 }
