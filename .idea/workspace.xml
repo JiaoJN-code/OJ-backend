@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6615810-eb07-4989-8e0e-bca665854fab" name="变更" comment="">
+      <change afterPath="$PROJECT_DIR$/code-sandbox/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-sandbox/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-sandbox/src/main/java/com/jjn/codeSandbox/CodeSandbox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-sandbox/src/main/java/com/jjn/codeSandbox/CodeSandboxApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-sandbox/src/main/java/com/jjn/codeSandbox/JavaNativeCodeSandbox.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-sandbox/src/main/java/com/jjn/codeSandbox/model/ExecuteCodeRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-sandbox/src/main/java/com/jjn/codeSandbox/model/ExecuteCodeResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-sandbox/src/main/java/com/jjn/codeSandbox/model/ExecuteMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-sandbox/src/main/java/com/jjn/codeSandbox/model/JudgeInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-sandbox/src/main/java/com/jjn/codeSandbox/utils/ProcessUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-sandbox/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/code-sandbox/src/test/java/com/jjn/codeSandbox/CodeSandboxApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,18 +32,19 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/code-sandbox" />
     <option name="RESET_MODE" value="HARD" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
   }
-}]]></component>
+}</component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -35,6 +52,9 @@
         <option name="url" value="https://github.com/JiaoJN-code/OJ-backend.git" />
       </UrlAndAccount>
     </option>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/JudgeServiceImpl.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -62,11 +82,15 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "jdk.selected.JAVA_MODULE": "corretto-1.8",
+    "last_opened_file_path": "E:/Java/yupi/OJ/OJ-backend/code-sandbox/src/main/java/com/jjn/codeSandbox",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
     "spring.configuration.checksum": "70de1d358a5f1d4e5a4cecff85cdecd4",
     "vue.rearranger.settings.migration": "true"
@@ -78,14 +102,53 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jjn.codeSandbox" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Java\yupi\OJ\OJ-backend\code-sandbox\src\main\java\com\jjn\codeSandbox" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Java\yupi\OJ\OJ-backend\code-sandbox\src\main\resources" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.jjn.codeSandbox" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jjn.codeSandbox.model" />
       <recent name="com.jjn.ojManagement.judge.strategy" />
       <recent name="com.jjn.ojManagement.judge.codeSandBox.impl" />
       <recent name="com.jjn.ojManagement.model.dto" />
       <recent name="com.jjn.ojManagement.model.vo" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.JavaNativeCodeSandboxTest.executeCodeTest">
+    <configuration name="JavaNativeCodeSandboxTest.executeCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-sandbox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jjn.codeSandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jjn.codeSandbox" />
+      <option name="MAIN_CLASS_NAME" value="com.jjn.codeSandbox.JavaNativeCodeSandboxTest" />
+      <option name="METHOD_NAME" value="executeCodeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CodeSandboxApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="code-sandbox" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.jjn.codeSandbox.CodeSandboxApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="OjManagementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="OJ-management" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.jjn.ojManagement.OjManagementApplication" />
@@ -93,6 +156,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.JavaNativeCodeSandboxTest.executeCodeTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -114,6 +182,9 @@
       <workItem from="1705288529514" duration="7498000" />
       <workItem from="1705384602530" duration="13282000" />
       <workItem from="1705473582532" duration="9201000" />
+      <workItem from="1705635816073" duration="3945000" />
+      <workItem from="1705916575012" duration="4476000" />
+      <workItem from="1706147817440" duration="20460000" />
     </task>
     <servers />
   </component>
@@ -136,17 +207,6 @@
       <path value="$PROJECT_DIR$/OJ-management" />
     </ignored-roots>
     <option name="LAST_COMMIT_MESSAGE" value="" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/JudgeServiceImpl.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
