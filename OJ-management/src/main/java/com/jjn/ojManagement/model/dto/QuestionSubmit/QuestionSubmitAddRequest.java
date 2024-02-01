@@ -1,5 +1,6 @@
 package com.jjn.ojManagement.model.dto.QuestionSubmit;
 
+import com.jjn.ojManagement.common.PageRequest;
 import lombok.Data;
 
 import java.io.Serializable;

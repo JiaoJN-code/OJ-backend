@@ -1,5 +1,7 @@
 package com.jjn.ojManagement.model.vo;
 
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import com.jjn.ojManagement.model.dto.Question.JudgeCase;
@@ -51,7 +53,7 @@ public class QuestionVo implements Serializable {
     /**
      * 判题配置(json数组)
      */
-    private JudgeCase judgeCase;
+    private List<JudgeCase> judgeCase;
     /**
      * 判题配置(json对象)
      */
@@ -97,7 +99,7 @@ public class QuestionVo implements Serializable {
         if (tagList != null) {
             question.setTags(GSON.toJson(tagList));
         }
-        JudgeCase judgeCase = questionVo.getJudgeCase();
+        List<JudgeCase> judgeCase = questionVo.getJudgeCase();
         if (judgeCase != null) {
             question.setJudgeCase(GSON.toJson(judgeCase));
         }
@@ -122,8 +124,8 @@ public class QuestionVo implements Serializable {
         BeanUtils.copyProperties(question, questionVo);
         questionVo.setTags(GSON.fromJson(question.getTags(), new TypeToken<List<String>>() {
         }.getType()));
-        questionVo.setJudgeCase(GSON.fromJson(question.getJudgeCase(), new TypeToken<JudgeCase>() {
-        }.getType()));
+        questionVo.setJudgeCase(JSON.parseObject(question.getJudgeCase(), new TypeReference<List<JudgeCase>>() {
+        }));
         questionVo.setJudgeConfig(GSON.fromJson(question.getJudgeConfig(), new TypeToken<JudgeConfig>() {
         }.getType()));
         return questionVo;

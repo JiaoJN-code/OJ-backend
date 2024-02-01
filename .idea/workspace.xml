@@ -5,7 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a6615810-eb07-4989-8e0e-bca665854fab" name="变更" comment="代码沙箱Java原生实现">
-      <change afterPath="$PROJECT_DIR$/code-sandbox/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/sshConfigs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/constant/QuestionJudgeConstant.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/QuestionSubmit/QuestionSubmitQueryByQuestionIdRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/QuestionSubmit/QuestionSubmitQueryByUserIdRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/QuestionSubmit/QuestionSubmitQueryRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/common/ErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/common/ErrorCode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/controller/QuestionController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/controller/QuestionController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/controller/QuestionSubmitController.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/controller/QuestionSubmitController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/JudgeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/JudgeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/codeSandBox/impl/RemoteCodeSandbox.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/codeSandBox/impl/RemoteCodeSandbox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/strategy/JavaJudgeStrategy.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/judge/strategy/JavaJudgeStrategy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/Question/JudgeCase.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/Question/JudgeCase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/Question/QuestionAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/Question/QuestionAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/Question/QuestionEditRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/Question/QuestionEditRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/Question/QuestionUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/Question/QuestionUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/QuestionSubmit/QuestionSubmitAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/dto/QuestionSubmit/QuestionSubmitAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/vo/JudgeInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/vo/JudgeInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/vo/QuestionSubmitVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/vo/QuestionSubmitVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/vo/QuestionVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/model/vo/QuestionVo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/service/QuestionSubmitService.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/service/QuestionSubmitService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/service/impl/QuestionSubmitServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/java/com/jjn/ojManagement/service/impl/QuestionSubmitServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OJ-management/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/OJ-management/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +48,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/code-sandbox" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RESET_MODE" value="HARD" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -56,35 +82,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "jdk.selected.JAVA_MODULE": "corretto-1.8",
-    "last_opened_file_path": "E:/Java/yupi/OJ/OJ-backend/code-sandbox/src/main/java/com/jjn/codeSandbox",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
-    "spring.configuration.checksum": "70de1d358a5f1d4e5a4cecff85cdecd4",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-1.8&quot;,
+    &quot;last_opened_file_path&quot;: &quot;E:/Java/yupi/OJ/OJ-backend/code-sandbox/src/main/java/com/jjn/codeSandbox&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;copyright&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;f7bd209e4563cdad7d757a1dc68eff3d&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.jjn.codeSandbox" />
@@ -96,20 +122,58 @@
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\Java\yupi\OJ\OJ-backend\code-sandbox\tmpCode\100cb2af-7cd6-4071-b452-98270ad9a360" />
+      <recent name="E:\Java\yupi\OJ\OJ-backend\code-sandbox\tmpCode\7ee4dd7c-5c17-41c0-93fc-7ddfde296b86" />
+      <recent name="E:\Java\yupi\OJ\OJ-backend\code-sandbox\tmpCode\7ee4dd7c-5c17-41c0-93fc-7ddfde296b86\solution" />
       <recent name="E:\Java\yupi\OJ\OJ-backend\code-sandbox\src\main\resources" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="com.jjn.codeSandbox" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.jjn.ojManagement.model.dto.QuestionSubmit" />
       <recent name="com.jjn.codeSandbox.model" />
       <recent name="com.jjn.ojManagement.judge.strategy" />
       <recent name="com.jjn.ojManagement.judge.codeSandBox.impl" />
       <recent name="com.jjn.ojManagement.model.dto" />
-      <recent name="com.jjn.ojManagement.model.vo" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JavaNativeCodeSandboxTest.executeCodeTest">
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.CodeSandboxApplication">
+    <configuration name="DockerDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.jjn.codeSandbox.docker.DockerDemo" />
+      <module name="code-sandbox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jjn.codeSandbox.docker.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JavaNativeCodeSandboxTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="code-sandbox" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.jjn.codeSandbox.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.jjn.codeSandbox" />
+      <option name="MAIN_CLASS_NAME" value="com.jjn.codeSandbox.JavaNativeCodeSandboxTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="JavaNativeCodeSandboxTest.executeCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="code-sandbox" />
       <extension name="coverage">
@@ -142,7 +206,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.JavaNativeCodeSandboxTest" />
         <item itemvalue="JUnit.JavaNativeCodeSandboxTest.executeCodeTest" />
+        <item itemvalue="应用程序.DockerDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -168,7 +234,11 @@
       <workItem from="1705473582532" duration="9201000" />
       <workItem from="1705635816073" duration="3945000" />
       <workItem from="1705916575012" duration="4476000" />
-      <workItem from="1706147817440" duration="20820000" />
+      <workItem from="1706147817440" duration="21436000" />
+      <workItem from="1706339490574" duration="1432000" />
+      <workItem from="1706353084897" duration="599000" />
+      <workItem from="1706596028539" duration="12285000" />
+      <workItem from="1706679860464" duration="21946000" />
     </task>
     <task id="LOCAL-00001" summary="代码沙箱Java原生实现">
       <created>1706192455456</created>

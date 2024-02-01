@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="6f811aa8-49ee-49cd-b6a4-b908ea9ecf4c" name="aliyun">
+        <fileTransfer rootFolder="/root/doker" accessType="SFTP" host="47.115.224.19" port="22" sshConfigId="5bd68f7a-8abc-4802-80f5-044cfdd72eb8" sshConfig="root@47.115.224.19:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

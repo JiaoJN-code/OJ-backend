@@ -81,8 +81,7 @@ public class JudgeServiceImpl implements JudgeService {
         judgeContext.setQuestion(question);
         // 根据编程语言选择判题策略
         JudgeStrategy judgeStrategy = judgeManager.doJudge(questionSubmit.getLanguage());
-        JudgeInfo judgeInfo = judgeStrategy.doJudge(judgeContext);
         // 返回执行信息
-        return judgeInfo;
+        return judgeStrategy.doJudge(judgeContext);
     }
 }

@@ -33,4 +33,4 @@ mybatis-plus:
 
 # 代码沙箱配置
 codeSandbox:
-  type: example
+  type: remote

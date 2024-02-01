@@ -2,6 +2,8 @@ package com.jjn.ojManagement.model.dto.Question;
 
 import lombok.Data;
 
+import java.util.List;
+
 /**
  * 题目用例
  *

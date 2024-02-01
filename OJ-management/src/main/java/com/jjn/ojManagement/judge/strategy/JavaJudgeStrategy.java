@@ -2,6 +2,9 @@ package com.jjn.ojManagement.judge.strategy;
 
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
+import com.jjn.ojManagement.common.ErrorCode;
+import com.jjn.ojManagement.constant.QuestionJudgeConstant;
+import com.jjn.ojManagement.exception.BusinessException;
 import com.jjn.ojManagement.model.dto.Question.JudgeCase;
 import com.jjn.ojManagement.model.dto.Question.JudgeConfig;
 import com.jjn.ojManagement.model.entity.Question;
@@ -23,6 +26,7 @@ public class JavaJudgeStrategy implements JudgeStrategy {
     @Override
     public JudgeInfo doJudge(JudgeContext judgeContext) {
         JudgeInfo judgeInfo = judgeContext.getJudgeInfo();
+        judgeInfo.setState(QuestionJudgeConstant.SUCCESS);
         List<String> outputList = judgeContext.getOutputList();
         List<JudgeCase> judgeCaseList = judgeContext.getJudgeCaseList();
         Question question = judgeContext.getQuestion();
@@ -36,6 +40,7 @@ public class JavaJudgeStrategy implements JudgeStrategy {
         for (int i = 0; i < outputList.size(); i++) {
             if (!outputList.get(i).equals(judgeCaseList.get(i).getOutput())) {
                 judgeInfo.setMessage(JudgeInfoEnum.WRONG_ANSWER.getMessage());
+                judgeInfo.setState(QuestionJudgeConstant.ERROR);
                 return judgeInfo;
             }
         }
@@ -48,10 +53,12 @@ public class JavaJudgeStrategy implements JudgeStrategy {
         }.getType());
         if (time > judgeConfig.getTimeLimit()) {
             judgeInfo.setMessage(JudgeInfoEnum.TIME_LIMIT_EXCEEDED.getMessage());
-            return null;
+            judgeInfo.setState(QuestionJudgeConstant.ERROR);
+            return judgeInfo;
         }
         if (memory > judgeConfig.getMemoryLimit()) {
             judgeInfo.setMessage(JudgeInfoEnum.MEMORY_LIMIT_EXCEEDED.getMessage());
+            judgeInfo.setState(QuestionJudgeConstant.ERROR);
             return judgeInfo;
         }
         return judgeInfo;

@@ -3,6 +3,7 @@ package com.jjn.ojManagement.model.dto.Question;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 题目编辑请求
@@ -40,7 +41,7 @@ public class QuestionEditRequest implements Serializable {
     /**
      * 判题配置(json数组)
      */
-    private JudgeCase judgeCase;
+    private List<JudgeCase> judgeCase;
 
     /**
      * 判题配置(json对象)

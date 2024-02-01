@@ -12,6 +12,11 @@ import lombok.Data;
 public class JudgeInfo {
 
     /**
+     * 程序执行状态 0-成功 1-失败
+     */
+    private Integer state;
+
+    /**
      * 程序执行信息
      */
     private String message;

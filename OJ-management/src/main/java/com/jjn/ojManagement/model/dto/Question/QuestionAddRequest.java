@@ -34,7 +34,7 @@ public class QuestionAddRequest implements Serializable {
     /**
      * 用例配置(json数组)
      */
-    private JudgeCase judgeCase;
+    private List<JudgeCase> judgeCase;
 
     /**
      * 判题配置(json对象)

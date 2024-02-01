@@ -64,7 +64,7 @@ public class QuestionController {
         if (tags != null) {
             question.setTags(GSON.toJson(tags));
         }
-        JudgeCase judgeCase = questionAddRequest.getJudgeCase();
+        List<JudgeCase> judgeCase = questionAddRequest.getJudgeCase();
         if (judgeCase != null) {
             question.setJudgeCase(GSON.toJson(judgeCase));
         }
